@@ -1,6 +1,7 @@
 // pages/_app.js
 
 import Head from "next/head";
+import General from "@/hooks/context/General";
 
 import "../styles/global.css";
 
@@ -17,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="martin Greg James is an investment broker and financial adviser
+          content="martin Greg James is an investment broker and financial adviser.
            martin portfolio are proof that he has huge experience under his sleeves;
            working with him will change your finanical life toward complete financial freedom.
            "
@@ -41,7 +42,9 @@ function MyApp({ Component, pageProps }) {
         <script src="/final/all.js"></script>
         <script src="/swiper/js/swiper-bundle.min.js"></script>
       </Head>
-      <Component {...pageProps} />
+      <General>
+        <Component {...pageProps} />
+      </General>
     </>
   );
 }

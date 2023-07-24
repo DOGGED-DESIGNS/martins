@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Makepost from "@/hooks/makepost";
 
 import Animatez from "@/Animate";
 import { Scale } from "@mui/icons-material";
@@ -7,6 +8,10 @@ import { Scale } from "@mui/icons-material";
 const index = () => {
   const { menu, menuchild, supplychild, supplycont, genchild, gencont } =
     Animatez();
+
+  const [error, setError] = useState(false);
+
+  const { addContacts, addcontact, setAddcontact } = Makepost();
 
   const [toggle, setToggle] = useState(false);
   const [indexz, setIndexz] = useState(1);
@@ -18,7 +23,7 @@ const index = () => {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   // const passwordRegex = /^.{6,}$/;
   // const passwordRegexconfirm = /^.{6,}$/;
-  const textarea = /^[a-zA-Z0-9_-]{2,225}$/;
+  const textarea = /^[a-zA-Z0-9_-\s]{2,225}$/;
   const username = /^[a-zA-Z0-9_-]{2,20}$/;
 
   useEffect(() => {
@@ -875,7 +880,116 @@ const index = () => {
           </div>
 
           <div className="contact__form">
-            <form action="">
+            <form
+              onSubmit={async (e) => {
+                e.preventDefault();
+
+                if (
+                  e.target.elements.name.value == "" ||
+                  e.target.elements.email.value == "" ||
+                  e.target.elements.des.value == ""
+                ) {
+                  setError(true);
+                } else {
+                  const formz = new FormData();
+
+                  console.log(e.target.elements.des.value);
+                  console.log(e.target.elements.name.value);
+                  console.log(e.target.elements.email.value);
+
+                  formz.append("message", "addcontact");
+                  formz.append("des", e.target.elements.des.value);
+                  formz.append("email", e.target.elements.email.value);
+                  formz.append("name", e.target.elements.name.value);
+
+                  await addContacts(formz);
+                  setError(false);
+                }
+              }}
+              action=""
+            >
+              <AnimatePresence>
+                {error && (
+                  <motion.div
+                    initial={{
+                      y: "-20%",
+                      // position: "fixed",
+                      // opacity: 0,
+                    }}
+                    animate={{
+                      // opacity: 1,
+                      // position: "fixed",
+                      y: 0,
+                    }}
+                    exit={{
+                      y: "-20%",
+                      opacity: 0,
+                      transition: {
+                        //   type: "spring",
+                        //   stiffness: 200,
+                      },
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                    }}
+                    className={` my-3 alert alert-danger fade show`}
+                  >
+                    <strong>Please fill all form field</strong>
+
+                    <div
+                      className=" mx-2 close alert-dismissable mx-3 "
+                      onClick={() => {
+                        setError(false);
+                      }}
+                    >
+                      {" "}
+                      &times;{" "}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+              <AnimatePresence>
+                {addcontact?.message && (
+                  <motion.div
+                    initial={{
+                      y: "-20%",
+                      // position: "fixed",
+                      // opacity: 0,
+                    }}
+                    animate={{
+                      // opacity: 1,
+                      // position: "fixed",
+                      y: 0,
+                    }}
+                    exit={{
+                      y: "-20%",
+                      opacity: 0,
+                      transition: {
+                        //   type: "spring",
+                        //   stiffness: 200,
+                      },
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                    }}
+                    className={` my-3 alert alert-${addcontact?.type} fade show`}
+                  >
+                    <strong>{addcontact?.message}</strong>
+
+                    <div
+                      className=" ml-5 close alert-dismissable mx-3 "
+                      onClick={() => {
+                        setAddcontact({});
+                      }}
+                    >
+                      {" "}
+                      &times;{" "}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
               <input
                 onChange={(e) => {
                   if (username.test(e.target.value)) {
@@ -887,6 +1001,7 @@ const index = () => {
                 placeholder="name"
                 className="   contact__input"
                 type="text"
+                name="name"
               />
               <AnimatePresence>
                 {name && (
@@ -912,6 +1027,7 @@ const index = () => {
                 placeholder="email"
                 className="   contact__input"
                 type="text"
+                name="email"
               />
               <AnimatePresence>
                 {email && (
@@ -936,7 +1052,7 @@ const index = () => {
                   }
                 }}
                 className="  contact__text"
-                name=""
+                name="des"
                 id=""
                 cols="30"
                 rows="10"

@@ -10868,13 +10868,14 @@ html {
   height: auto;
 }
 .tab__contz::-webkit-scrollbar {
-  height: 7px;
+  height: 4px;
   background: #f5f5f5;
   width: 20px;
 }
 .tab__contz::-webkit-scrollbar-thumb {
   background: #f26323;
   border-radius: 4px;
+  height: 5px;
 }
 .tab__contz::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
@@ -10885,6 +10886,7 @@ html {
   display: flex;
   width: 940px;
   margin: auto;
+  gap: 3px;
   margin-bottom: 7px;
 }
 .tab__button > button {
@@ -10960,7 +10962,7 @@ html {
   border: rgba(0, 0, 0, 0);
   height: 175px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 7px;
   display: block;
   padding-left: 10px;
@@ -10983,7 +10985,7 @@ html {
   background: #cccacb;
   display: block;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   outline: none;
   border-radius: 30px;
   border: rgba(0, 0, 0, 0);

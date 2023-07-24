@@ -7,7 +7,8 @@ export const Generalacess = () => {
 };
 
 const General = (props) => {
-  const [comment, setComment] = useState({});
+  const [contactz, setContactz] = useState({});
+  const [loading, setLoading] = useState(false);
   const [id, setId] = useState("");
   const [subtitle1, setSubtitle1] = useState("");
   const [subtitle2, setSubtitle2] = useState("");
@@ -20,8 +21,8 @@ const General = (props) => {
       value={{
         id,
         title,
-        setComment,
-        comment,
+        setContactz,
+        contactz,
         setTitle,
         setId,
         des,
@@ -34,6 +35,8 @@ const General = (props) => {
         setImg1,
         img2,
         setImg2,
+        loading,
+        setLoading,
       }}
     >
       {props.children}

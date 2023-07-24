@@ -9,26 +9,9 @@ import axios from "axios";
 // <p><span style="background-color: rgb(247, 247, 248); color: rgb(55, 65, 81);">A fire is a devastating event that can occur unexpectedly, posing a significant threat to life, property, and peace of mind. While we hope never to experience a house fire, it is essential to be prepared for such emergencies. One crucial safety measure every household should implement is the presence of a fire extinguisher. In this blog post, we will explore the reasons why having a fire extinguisher at home is of utmost i</span>mportance.</p>
 
 const Statichook = () => {
-  const catCount = async () => {
-    const data = await axios.post(
-      "http://localhost/women/php/process.php",
-      {
-        message: "categorycount",
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-          "Content-Type": "multipart/form-data",
-        },
-      }
-    );
-
-    return data.data;
-  };
-
   const hitCount = async () => {
     const data = await axios.post(
-      "http://localhost/women/php/process.php",
+      "http://localhost/martinsApi/process.php",
       {
         message: "hit",
       },
@@ -43,11 +26,12 @@ const Statichook = () => {
     return data.data;
   };
 
-  const commentCount = async () => {
+  const deleteContacts = async (id) => {
     const data = await axios.post(
-      "http://localhost/women/php/process.php",
+      "http://localhost/martinsApi/process.php",
       {
-        message: "commentcount",
+        message: "deletecontact",
+        id: id,
       },
       {
         headers: {
@@ -60,11 +44,12 @@ const Statichook = () => {
     return data.data;
   };
 
-  const postCount = async () => {
+  const singleContacts = async (id) => {
     const data = await axios.post(
-      "http://localhost/women/php/process.php",
+      "http://localhost/martinsApi/process.php",
       {
-        message: "postcount",
+        message: "singlecontact",
+        id: id,
       },
       {
         headers: {
@@ -77,43 +62,11 @@ const Statichook = () => {
     return data.data;
   };
 
-  const quesCount = async () => {
+  const getContacts = async () => {
     const data = await axios.post(
-      "http://localhost/women/php/process.php",
+      "http://localhost/martinsApi/process.php",
       {
-        message: "questioncount",
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-          "Content-Type": "multipart/form-data",
-        },
-      }
-    );
-
-    return data.data;
-  };
-  const getCategory = async () => {
-    const data = await axios.post(
-      "http://localhost/women/php/process.php",
-      {
-        message: "getcategory",
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-          "Content-Type": "multipart/form-data",
-        },
-      }
-    );
-
-    return data.data;
-  };
-  const getComment = async () => {
-    const data = await axios.post(
-      "http://localhost/women/php/process.php",
-      {
-        message: "getcomment",
+        message: "getcontact",
       },
       {
         headers: {
@@ -127,13 +80,9 @@ const Statichook = () => {
   };
 
   return {
-    catCount,
-    hitCount,
-    getCategory,
-    commentCount,
-    postCount,
-    quesCount,
-    getComment,
+    deleteContacts,
+    getContacts,
+    singleContacts,
   };
 };
 
