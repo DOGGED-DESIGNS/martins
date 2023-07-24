@@ -38,7 +38,7 @@ const Makepost = () => {
   const singleContacts = async (id) => {
     setLoading(true);
     const data = await axios.post(
-      "http://localhost/martinsApi/process.php",
+      "https://jeffmatthewpatten.com/api3/process.php",
       {
         message: "singlecontact",
         id: id,
@@ -57,7 +57,7 @@ const Makepost = () => {
   const addContacts = async (form) => {
     setLoading(true);
     const data = await axios.post(
-      "http://localhost/martinsApi/process.php",
+      "https://jeffmatthewpatten.com/api3/process.php",
       form,
       {
         headers: {

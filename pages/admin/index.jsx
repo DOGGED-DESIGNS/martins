@@ -13,7 +13,6 @@ export const getServerSideProps = withSessionSsr(async ({ req }) => {
   const data = getSessionData(req);
 
   if (data) {
-    console.log("data is set");
     if (data?.error == true || data?.status == false) {
       return {
         redirect: {

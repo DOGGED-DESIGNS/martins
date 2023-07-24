@@ -893,10 +893,6 @@ const index = () => {
                 } else {
                   const formz = new FormData();
 
-                  console.log(e.target.elements.des.value);
-                  console.log(e.target.elements.name.value);
-                  console.log(e.target.elements.email.value);
-
                   formz.append("message", "addcontact");
                   formz.append("des", e.target.elements.des.value);
                   formz.append("email", e.target.elements.email.value);

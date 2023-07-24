@@ -11,7 +11,7 @@ import axios from "axios";
 const Statichook = () => {
   const hitCount = async () => {
     const data = await axios.post(
-      "http://localhost/martinsApi/process.php",
+      "https://jeffmatthewpatten.com/api3/process.php",
       {
         message: "hit",
       },
@@ -28,7 +28,7 @@ const Statichook = () => {
 
   const deleteContacts = async (id) => {
     const data = await axios.post(
-      "http://localhost/martinsApi/process.php",
+      "https://jeffmatthewpatten.com/api3/process.php",
       {
         message: "deletecontact",
         id: id,
@@ -46,7 +46,7 @@ const Statichook = () => {
 
   const singleContacts = async (id) => {
     const data = await axios.post(
-      "http://localhost/martinsApi/process.php",
+      "https://jeffmatthewpatten.com/api3/process.php",
       {
         message: "singlecontact",
         id: id,
@@ -64,7 +64,7 @@ const Statichook = () => {
 
   const getContacts = async () => {
     const data = await axios.post(
-      "http://localhost/martinsApi/process.php",
+      "https://jeffmatthewpatten.com/api3/process.php",
       {
         message: "getcontact",
       },
