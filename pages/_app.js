@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/swiper/owl.carousel.min.css" />
         <link rel="stylesheet" href="/swiper/owl.theme.default.css" />
         <link rel="stylesheet" href="/swiper/css/swiper-bundle.min.css" />
-        <link rel="shortcut icon" href="/asset/img/martinsshort.png" />
+        <link rel="shortcut icon" href="/asset/icons/martinsshort.svg" />
         {/* <link rel="stylesheet" href="./final/index.min.css" /> */}
         <title>martin Greg James</title>
         <script src="/jquery.3.4.1.js?cd=123"></script>
