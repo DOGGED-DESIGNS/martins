@@ -10115,6 +10115,9 @@ a.text-dark:focus {
   margin: 0px;
   font-size: "Raleway", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   font-size: 36px;
   color: #f26323;
@@ -10498,6 +10501,11 @@ html {
   height: 580px;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 780px) {
+  .header {
+    height: 480px;
+  }
 }
 .header__button {
   padding: 10px 27px;
@@ -10884,15 +10892,16 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 940px;
+  max-width: 940px;
   margin: auto;
+  margin-top: 40px;
   gap: 3px;
   margin-bottom: 7px;
 }
 .tab__button > button {
-  padding: 20px 35px;
+  padding: 8px 35px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 25px;
   text-transform: capitalize;
   border: rgba(0, 0, 0, 0);
   border: 1px solid #f26323;
@@ -10910,14 +10919,11 @@ html {
     font-size: 15px;
   }
 }
-.tab__button > button:hover {
-  background: rgba(0, 0, 0, 0);
-  color: #f26323;
-}
 .tab__tab {
   padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   margin: auto;
-  margin-top: 40px;
   border: 2px solid #cccacb;
   max-width: 940px;
 }
