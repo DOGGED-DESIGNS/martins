@@ -289,9 +289,11 @@ const index = () => {
             <div className="shadow-sm trust__grid--cont">
               <h3 className="trust__grid--h3">On Time</h3>
               <p className="trust__grid--p">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-                esse eum reprehenderit provident accusamus. Placeat facere fuga
-                ullam at ratione!
+                I have consistently demonstrated a strong commitment to
+                timeliness and responsiveness. Whenever my clients have a
+                question or need assistance, i am always just a phone call or
+                email away, my promptness in addressing their concerns is my
+                work ethics.
               </p>
             </div>
           </div>
@@ -391,7 +393,6 @@ const index = () => {
 
       {/* <!-- end of trust --> */}
 
-      <div className=" text-center border">this is for a tese</div>
       <section className="tab main">
         <div className="tab__button">
           <button className=" ">My_story_and_services</button>
