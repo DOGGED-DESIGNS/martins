@@ -159,10 +159,6 @@ const index = () => {
             <div className="nav__social">
               <a href="#contact">
                 {" "}
-                <i className="fab fa-facebook"></i>{" "}
-              </a>
-              <a href="#contact">
-                {" "}
                 <i className="fab fa-telegram"></i>{" "}
               </a>
               <a href="#contact">
@@ -171,7 +167,7 @@ const index = () => {
               </a>
               <a href="#contact">
                 {" "}
-                <i className="fab fa-whatsapp"></i>{" "}
+                <i className="fa fa-envelope"></i>{" "}
               </a>
             </div>
           </motion.nav>
@@ -263,20 +259,22 @@ const index = () => {
               Broker, Investment Adviser
             </motion.p>
 
-            <motion.h1 variants={genchild} className="header__h1">
+            <motion.h1 variants={genchild} className=" mb-5 header__h1">
               Martin Greg James
             </motion.h1>
-
-            <motion.button
-              whileTap={{
-                originx: 0,
-                scale: 0.9,
-              }}
-              variants={genchild}
-              className="header__button"
-            >
-              contact
-            </motion.button>
+            <motion.div className="  d-flex">
+              <motion.a
+                href="#contact"
+                whileTap={{
+                  originx: 0,
+                  scale: 0.9,
+                }}
+                variants={genchild}
+                className=" text-capitalize text-decoration-none text-white m-auto d-block header__button"
+              >
+                contact Me
+              </motion.a>
+            </motion.div>
           </motion.div>
         </div>
       </header>
@@ -873,7 +871,7 @@ const index = () => {
       {/* <!-- this is the footer --> */}
 
       <footer className="main pb-5">
-        <p className="text-center font-weight-bold">copyright &copy; 2023</p>
+        <p className="text-center font-weight-bold">copyright &copy; 2020</p>
       </footer>
     </>
   );
