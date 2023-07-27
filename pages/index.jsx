@@ -151,25 +151,25 @@ const index = () => {
             </div>
 
             <div className="nav__link">
-              <a href="#">About</a>
-              <a href="#">Contact</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
               <a href="#"> Home </a>
             </div>
 
             <div className="nav__social">
-              <a href="#">
+              <a href="#contact">
                 {" "}
                 <i className="fab fa-facebook"></i>{" "}
               </a>
-              <a href="#">
+              <a href="#contact">
                 {" "}
                 <i className="fab fa-telegram"></i>{" "}
               </a>
-              <a href="#">
+              <a href="#contact">
                 {" "}
                 <i className="fab fa-instagram"></i>{" "}
               </a>
-              <a href="#">
+              <a href="#contact">
                 {" "}
                 <i className="fab fa-whatsapp"></i>{" "}
               </a>
@@ -223,9 +223,30 @@ const index = () => {
                     </i>
                   </div>
                   <div className="navsmallzz__a">
-                    <a href="">Home</a>
-                    <a href="">Contact</a>
-                    <a href="">About</a>
+                    <a
+                      onClick={() => {
+                        setToggle(false);
+                      }}
+                      href="#"
+                    >
+                      Home
+                    </a>
+                    <a
+                      onClick={() => {
+                        setToggle(false);
+                      }}
+                      href="#contact"
+                    >
+                      Contact
+                    </a>
+                    <a
+                      href="#about"
+                      onClick={() => {
+                        setToggle(false);
+                      }}
+                    >
+                      About
+                    </a>
                   </div>
                 </motion.div>
               )}
@@ -239,7 +260,7 @@ const index = () => {
             className="header__mover2"
           >
             <motion.p variants={genchild} className="header__p">
-              Financial Market Expert, Broker, Investment Adviser
+              Broker, Investment Adviser
             </motion.p>
 
             <motion.h1 variants={genchild} className="header__h1">
@@ -268,11 +289,9 @@ const index = () => {
               <p className="trust__grid--p">
                 When it comes to managing clients financial future, trust and
                 reliability are paramount.
-                <span className="font-weight-bolder">
-                  Martin Greg James{" "}
-                </span>{" "}
-                is committed to providing you with the highest level of service
-                and expertise, to assist you in achieving your financial goals.
+                <span className="font-weight-bold">Martin Greg James </span> is
+                committed to providing you with the highest level of service and
+                expertise, to assist you in achieving your financial goals.
               </p>
             </div>
           </div>
@@ -280,8 +299,8 @@ const index = () => {
             <div className="shadow-sm trust__grid--cont">
               <h3 className="trust__grid--h3">Trusted</h3>
               <p className="trust__grid--p">
-                with my experince of more than 15 years i am ready to help you
-                grow your wealth and head towards financial freedom
+                with my experience of more than 11 years, i am ready to help you
+                grow your wealth and head towards financial freedom.
               </p>
             </div>
           </div>
@@ -375,6 +394,7 @@ const index = () => {
                     <img src="./asset/icons/realestate.svg" alt="" />
                   </div>
                 </div>
+
                 <div>
                   <div className="mb-4">
                     <h2 className="core__flex--h2">Real Estate</h2>
@@ -406,15 +426,15 @@ const index = () => {
           className="tab__tab  "
         >
           <div className="row">
-            <div className="  col-sm-12 col-md-6 col-lg-6">
+            <div className="  col-sm-12 col-md-6 col-lg-6" id="about">
               <h3 className="font-weight-bold roboto text-capitalize">
                 my story
               </h3>
               <p className="mt-3 rale">
-                I am currently working with the firm; NORTHWESTERN MUTUAL
-                INVESTMENT (CRD# 2881), and have previously worked with seven
-                (2) other brokerage & investment firms. I have obtained seven
-                (21) State Registration Licenses and passed four (4) Brokerage
+                I am currently working with the firm CETERA INVESTMENT SERVICES
+                LLC (CRD#:15340) and have previously worked with five (5) other
+                brokerage & investment firms. I have obtained fifteen (15) State
+                Registration Licenses and passed four (4) Brokerage
                 Qualification Examinations. <br />
               </p>
             </div>
@@ -425,41 +445,18 @@ const index = () => {
               </h3>
 
               <ul className=" pl-5">
+                Hedge funds
+                <li className=" text-capitalize">Portfolio management</li>
                 <li className=" text-capitalize">
-                  stock market trading/ investment
+                  Stock Market Trading/ Investment
                 </li>
-                <li className=" text-capitalize"> Stock Brokerage</li>
+                <li className=" text-capitalize">Forex trading</li>
+                <li className=" text-capitalize">Crypto trading</li>
+                <li className=" text-capitalize"> Hedge funds</li>
+                <li className=" text-capitalize"> Real estate </li>
                 <li className=" text-capitalize"> Investment Advisory </li>
-                <li className=" text-capitalize"> Digital Assets Trading</li>
-                <li className=" text-capitalize"> Financial Consulting </li>
+                <li className=" text-capitalize"> Financial Consulting.</li>
               </ul>
-            </div>
-
-            <div className="row">
-              <div className="  col-sm-12 p-2 my-2 col-md-3 col-lg-3 ">
-                <h3 className="  font-weight-bold text-center">$10M</h3>
-                <p className="  text-black-50 font-weight-bold  text-capitalize text-center">
-                  estimated profit accumulated
-                </p>
-              </div>
-              <div className="  col-sm-12 p-2 my-2 col-md-3 col-lg-3 ">
-                <h3 className="  font-weight-bold text-center">5k</h3>
-                <p className="  text-black-50 font-weight-bold  text-capitalize text-center">
-                  active clients portfolios
-                </p>
-              </div>
-              <div className="  col-sm-12 p-2 my-2 col-md-3 col-lg-3 ">
-                <h3 className="  font-weight-bold text-center">75%</h3>
-                <p className="  text-black-50 font-weight-bold  text-capitalize text-center">
-                  visitor-client converstion
-                </p>
-              </div>
-              <div className="  col-sm-12 p-2 my-2 col-md-3 col-lg-3 ">
-                <h3 className="  font-weight-bold text-center">100%</h3>
-                <p className="  text-black-50 font-weight-bold pr-3  text-capitalize text-center">
-                  quality and satisfaction gurantee
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -474,60 +471,42 @@ const index = () => {
           exit="exit"
           className="tab__tab mb-4"
         >
-          <h3 class="font-weight-bold roboto text-capitalize">Experience</h3>
-          <div class="mt-3 ">
-            <p class=" my-3 pl-5 robot ">
-              <small class=" text-uppercase font-weight-bold">
-                {" "}
-                2019 - current <br />
+          <h3 className="font-weight-bold roboto text-capitalize">
+            Current Registration
+          </h3>
+          <div className="mt-3 ">
+            <p className=" my-3 pl-5 robot ">
+              <small className=" text-uppercase font-weight-bold ">
+                (B) <br />{" "}
               </small>
-              BROKER | TRUIST INVESTMENT SERVICES, INC.(CRD*:17499) <br />
+              <small className=" text-uppercase font-weight-bold">
+                CETERA INVESTMENT SERVICES LLC (CRD#:15340) 895 ODUM ROAD,
+                GARDENDALE, AL 35071 321 N SEMINARY ST, FLORENCE, AL 35630{" "}
+                <br />
+              </small>
               <small>
                 <i>
-                  1605 lakewood ranch blvd, <br /> bradenton, FL 34209{" "}
+                  Registered with this firm since <br /> 6/17/2013
                 </i>{" "}
                 <br />
               </small>
             </p>
             <p class=" my-3 pl-5">
-              <small class=" text-uppercase font-weight-bold">
-                {" "}
-                2020 - current <br />
+              <small className=" text-uppercase font-weight-bold ">
+                (IA)
+                <br />{" "}
               </small>
-              INVESTMENT ADVISER | TRUIST ADVISORY SERVICES, INC.(CRD#:283390){" "}
-              <br />
+              <small className=" text-uppercase font-weight-bold">
+                CETERA INVESTMENT ADVISERS LLC (CRD#:105644) 895 ODUM RD,
+                GARDENDALE, AL 35071
+                <br />
+              </small>
               <small>
                 <i>
-                  7419 manatee aenue west suite pb , <br /> bradenton, FL 34211{" "}
+                  Registered with this firm since <br /> 1/21/2014.
                 </i>{" "}
                 <br />
               </small>
-            </p>
-            <p class=" my-3 pl-5">
-              <small class=" text-uppercase font-weight-bold">
-                {" "}
-                2017 - 2019 <br />
-              </small>
-              BMO HARRIS FINANCIAL ADVISORS, INC(CRD#:137115) <br />
-              <small>
-                <i> BARTLETT, IL </i> <br />
-              </small>
-            </p>
-            <p class=" my-3 pl-5">
-              <small class=" text-uppercase font-weight-bold">
-                {" "}
-                2011 - 2012 <br />
-              </small>
-              PNC INVESTMENTS (CRD#:129052) <br />
-              <small> DOWNERS GROVE, IL</small>
-            </p>
-            <p class=" my-3 pl-5">
-              <small class=" text-uppercase font-weight-bold">
-                {" "}
-                2008 - 2011 <br />
-              </small>
-              CHASE INVESTMENT SERVICES CORP.(CRD#:25574) <br />
-              <small>DOWNERS GROVE, IL</small>
             </p>
           </div>
         </div>
@@ -562,32 +541,46 @@ const index = () => {
               CERTIFIED BY FINRA <i>CRD#:5481482</i>{" "}
             </a> */}
             <p>
-              I have solid 17 years of experience working with the prestigious
-              firms below.
+              I have solid 11years of experience working with the prestigious
+              firms on previous Registration(s)
             </p>
             <br />
 
             <ul className=" pl-5">
-              <li className=" text-capitalize py-2">
-                GOLDMAN, SACHS & CO. (CRD# 361)
+              <li className="font-weight-bold text-capitalize py-2">
+                CETERA INVESTMENT SERVICES LLC (CRD#:15340) BIRMINGHAM, AL{" "}
                 <small class="d-block">
                   {" "}
-                  <i>STOCK BROKER | INVESTMENT ADVISER (2003 - 2007)</i>
+                  <i>06/17/2013 - 01/21/2014</i>
                 </small>
               </li>
-              <li className=" text-capitalize py-2">
-                PFS INVESTMENTS INC. (CRD# 10111) Stock Broker | Investment
-                Adviser (2009 - 2009)
+              <li className="font-weight-bold text-capitalize py-2">
+                BBVA SECURITIES INC. (CRD#:27060) BIRMINGHAM, AL
                 <small class="d-block">
                   {" "}
-                  <i>Stock Broker | Investment Adviser (2009 - 2009)</i>
+                  <i>05/16/2013 - 06/12/2013</i>
                 </small>
               </li>
-              <li className=" text-capitalize py-2">
-                NORTHWESTERN MUTUAL INVESTMENT... (CRD# 2881)
+              <li className="font-weight-bold text-capitalize py-2">
+                BBVA COMPASS INVESTMENT SOLUTIONS, INC (CRD#:17086) BIRMINGHAM,
+                AL{" "}
                 <small class="d-block">
                   {" "}
-                  <i>Broker | Investment Adviser (2009 - present)</i>
+                  <i>09/13/2012 - 05/16/2013</i>
+                </small>
+              </li>
+              <li className="font-weight-bold text-capitalize py-2">
+                MORGAN KEEGAN & COMPANY, INC. (CRD#:4161) BIRMINGHAM, AL{" "}
+                <small class="d-block">
+                  {" "}
+                  <i>11/15/2011 - 09/06/2012</i>
+                </small>
+              </li>
+              <li className=" text-capitalize font-weight-bold py-2">
+                MORGAN KEEGAN & COMPANY, INC. (CRD#:4161) BIRMINGHAM, AL{" "}
+                <small class="d-block">
+                  {" "}
+                  <i>07/29/2011 - 09/06/2012.</i>
                 </small>
               </li>
             </ul>
@@ -610,42 +603,34 @@ const index = () => {
           <h3 className="font-weight-bold roboto text-capitalize">Education</h3>
           <p className="mt-3"></p>
           <ul className=" pl-5">
-            <li className=" text-capitalize py-2">
-              Series 66 - Uniform Combined State Law Examination (May 2, 2006){" "}
+            <li className="font-weight-bold text-capitalize py-2">
+              Series 66 - Uniform Combined State Law Examination (Nov 14, 2011)
               <small class="d-block">
                 {" "}
                 <i>State Securities Law Exam</i>
               </small>
             </li>
-            <li className=" text-capitalize py-2">
-              SIE - Securities Industry Essentials Examination (Oct 1, 2018)
+            <li className="font-weight-bold text-capitalize py-2">
+              Series 63 - Uniform Securities Agent State Law Examination (Sep 8,
+              2011)
+              <small class="d-block">
+                {" "}
+                <i>State Securities Law Exam</i>
+              </small>
+            </li>
+            <li className="font-weight-bold text-capitalize py-2">
+              SIE - Securities Industry Essentials ExaminationOct 1, 2018
               <small class="d-block">
                 {" "}
                 <i>General Industry/Products Exam</i>
               </small>
             </li>
-            <li className=" text-capitalize py-2">
-              Series 7 - General Securities Representative Examination (May 20,
-              2003)
+            <li className="font-weight-bold text-capitalize py-2">
+              Series 7 - General Securities Representative ExaminationJul 28,
+              2011.
               <small class="d-block">
                 {" "}
                 <i>General Industry/Products Exam</i>
-              </small>
-            </li>
-            <li className=" text-capitalize py-2">
-              Series 9 - General Securities Sales Supervisor - Options Module
-              Examination (Dec 2, 2005)
-              <small className="d-block">
-                {" "}
-                <i>Principal/Supervisory Exam</i>
-              </small>
-            </li>
-            <li className=" text-capitalize py-2">
-              Series 10 - General Securities Sales Supervisor - General Module
-              Examination (Nov 22, 2005)
-              <small className="d-block">
-                {" "}
-                <i>Principal/Supervisory Exam</i>
               </small>
             </li>
           </ul>
@@ -654,143 +639,9 @@ const index = () => {
 
       {/* <!-- test --> */}
 
-      <section className="test mt-5">
-        <div className="container-fluid">
-          <h2 className="test__h2">What Our Client Says !</h2>
-          {/* <!-- this is where the fade swiper starts --> */}
-
-          <div className="pt-5 swiper testSwiper">
-            <div className="swiper-wrapper mb-5">
-              <div className="swiper-slide">
-                <div className="test__mover">
-                  <p className="test__p">
-                    Choosing to work with martin is one of the best decisions I
-                    ever made. he showed me how the stock market really worked
-                    and how to take advantage of the market manipulations. he's
-                    the best.
-                  </p>
-
-                  <div className="test__people">
-                    <div className="test__img">
-                      <img
-                        src="https://images.pexels.com/photos/6766248/pexels-photo-6766248.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt=""
-                      />
-                    </div>
-                    <div className="test__name">
-                      <h6> David parker</h6>
-                      <p> Designer</p>
-                    </div>
-                  </div>
-
-                  <img
-                    className="test__quote"
-                    src="./asset/icons/quote.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="test__mover">
-                  <p className="test__p">
-                    Jeff is always ready to help out whenever I'm stuck on any
-                    financial situation pertaining to the stock & other markets.
-                    he coached me fully for about a year before I started
-                    trading multiple portfolios, yet he still helps me
-                    understand the general markets and volatility patterns by
-                    the day. i am deeply grateful jeff.
-                  </p>
-
-                  <div className="test__people">
-                    <div className="test__img">
-                      <img
-                        src="https://images.pexels.com/photos/7647380/pexels-photo-7647380.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt=""
-                      />
-                    </div>
-                    <div className="test__name">
-                      <h6>John Alen</h6>
-                      <p>Property developer</p>
-                    </div>
-                  </div>
-
-                  <img
-                    className="test__quote"
-                    src="./asset/icons/quote.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="test__mover">
-                  <p className="test__p">
-                    Martin Greg James is one of the best investment advisors you
-                    can get out there today. he's quite hardworking and focused,
-                    he handles my portfolio effectively and it gives me so much
-                    peace of mind knowing my funds are safely traded in these
-                    turbulent markets.
-                  </p>
-
-                  <div className="test__people">
-                    <div className="test__img">
-                      <img
-                        src="https://images.pexels.com/photos/2955375/pexels-photo-2955375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt=""
-                      />
-                    </div>
-                    <div className="test__name">
-                      <h6> Walker cameron</h6>
-                      <p> Business Owner</p>
-                    </div>
-                  </div>
-
-                  <img
-                    className="test__quote"
-                    src="./asset/icons/quote.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="test__mover">
-                  <p className="test__p">
-                    Wonderful Communication! he's very experienced with his work
-                    and is also very adaptable with respect to the financial
-                    markets. if you’re a newbie and you're still looking for an
-                    investment adviser. Jeffery matthew patten is definitely
-                    well qualified for the job
-                  </p>
-
-                  <div className="test__people">
-                    <div className="test__img">
-                      <img
-                        src="https://images.pexels.com/photos/5990272/pexels-photo-5990272.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt=""
-                      />
-                    </div>
-                    <div className="test__name">
-                      <h6> Amanda barbera</h6>
-                      <p> consultant</p>
-                    </div>
-                  </div>
-
-                  <img
-                    className="test__quote"
-                    src="./asset/icons/quote.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            {/* <!-- <div className="swiper-button-next"></div>
-            <div className="swiper-button-prev"></div> --> */}
-            <div className="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
       {/* <!-- end of test --> */}
 
-      <section className="main contact">
+      <section className="main contact" id="contact">
         <div className="contact__grid">
           <div>
             <motion.div
@@ -801,16 +652,17 @@ const index = () => {
               <h2 className="contact__h2">contact</h2>
 
               <motion.div variants={genchild} className="contact__flex">
-                <i className="fab fa-instagram"></i>
-                <p>@matinsinstagram</p>
+                <i className="fa fa-envelope "></i>
+                <p>martingregj38@gmail.com</p>
               </motion.div>
               <motion.div variants={genchild} className="contact__flex">
-                <i className="fab fa-facebook"></i>
-                <p>@matinsinstagram</p>
+                <i className="fab fa-instagram"></i>
+                <p>Gregjamestrades</p>
               </motion.div>
+
               <motion.div variants={genchild} className="contact__flex">
                 <i className="fab fa-telegram"></i>
-                <p>@matinsinstagram</p>
+                <p>Martingregtrade</p>
               </motion.div>
             </motion.div>
           </div>
@@ -1021,7 +873,7 @@ const index = () => {
       {/* <!-- this is the footer --> */}
 
       <footer className="main pb-5">
-        <p className="text-center font-weight-bolder">copyright &copy; 2023</p>
+        <p className="text-center font-weight-bold">copyright &copy; 2023</p>
       </footer>
     </>
   );

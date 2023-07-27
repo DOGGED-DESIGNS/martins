@@ -10988,7 +10988,7 @@ html {
 }
 .contact__form {
   margin: 5px;
-  max-width: 490px;
+  width: 490px;
   margin: auto;
   margin-top: 40px;
 }
