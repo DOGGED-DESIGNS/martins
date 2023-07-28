@@ -42,7 +42,18 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/swiper/owl.carousel.min.css" />
         <link rel="stylesheet" href="/swiper/owl.theme.default.css" />
         <link rel="stylesheet" href="/swiper/css/swiper-bundle.min.css" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon (1).ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon (1).ico"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon (1).ico"
+        />{" "}
         {/* <link rel="stylesheet" href="./final/index.min.css" /> */}
         <title>Martin Greg James</title>
         <script src="/jquery.3.4.1.js?cd=123"></script>
