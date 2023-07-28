@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="robots" content="index" />
         <meta
           name="keywords"
-          content="martin james greg, martingregjames, forex, broker, crypto, financial adviser "
+          content="martin james greg, martin greg james, forex, broker, crypto, financial adviser "
         />
         <meta name="keywords" content="love, relationship happiness" />
         <link rel="stylesheet" href="/final/fontawesome.min.css" />
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/swiper/owl.carousel.min.css" />
         <link rel="stylesheet" href="/swiper/owl.theme.default.css" />
         <link rel="stylesheet" href="/swiper/css/swiper-bundle.min.css" />
-        <link rel="icon" sizes="16x16" href="/martinsshort.png" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon (1).ico" />
         {/* <link rel="stylesheet" href="./final/index.min.css" /> */}
         <title>Martin Greg James</title>
         <script src="/jquery.3.4.1.js?cd=123"></script>
