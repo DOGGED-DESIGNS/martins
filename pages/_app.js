@@ -34,27 +34,27 @@ function MyApp({ Component, pageProps }) {
         <link
           rel="shortcut icon"
           sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico"
+          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
         />
         <link
           rel="apple-touch-icon"
           sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico"
+          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
         />
         <link
           rel="icon"
           sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico"
+          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
         />
         <link
           rel="icon"
           sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico"
+          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
         />
         <link
           rel="apple-touch-icon"
           sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico"
+          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
         />
         {/* <link rel="stylesheet" href="./final/index.min.css" /> */}
         <title>Martin Greg James</title>
