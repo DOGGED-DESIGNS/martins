@@ -31,33 +31,10 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/swiper/owl.carousel.min.css" />
         <link rel="stylesheet" href="/swiper/owl.theme.default.css" />
         <link rel="stylesheet" href="/swiper/css/swiper-bundle.min.css" />
-        <link
-          rel="shortcut icon"
-          sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
-        />
-        <link
-          rel="icon"
-          sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
-        />
-        <link
-          rel="icon"
-          sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="16x16"
-          href="https://womenlove-wbl4.vercel.app/miller.ico?cd=222"
-        />
+        <link rel="shortcut icon" href="/martinsshort.svg" />
+
         {/* <link rel="stylesheet" href="./final/index.min.css" /> */}
-        <title>Martin Greg James</title>
+        <title>Matin Greg James</title>
         <script src="/jquery.3.4.1.js?cd=123"></script>
         <script src="/swiper/owl.carousel.min.js"></script>
         <script src="/final/all.js"></script>
