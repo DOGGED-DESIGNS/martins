@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/swiper/owl.carousel.min.css" />
         <link rel="stylesheet" href="/swiper/owl.theme.default.css" />
         <link rel="stylesheet" href="/swiper/css/swiper-bundle.min.css" />
-        <link rel="shortcut icon" href="/martinsshort.svg" />
+        <link rel="shortcut icon" href="/miller.ico" />
 
         {/* <link rel="stylesheet" href="./final/index.min.css" /> */}
         <title>Matin Greg James</title>
